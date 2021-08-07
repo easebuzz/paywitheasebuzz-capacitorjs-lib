@@ -1,0 +1,31 @@
+{
+  "api": {
+    "name": "EasebuzzCheckoutPlugin",
+    "slug": "easebuzzcheckoutplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "proceedToPayment",
+        "signature": "(option: any) => any",
+        "parameters": [
+          {
+            "name": "option",
+            "docs": "",
+            "type": "any"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "String"
+        ],
+        "slug": "proceedtopayment"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": []
+}
