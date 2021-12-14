@@ -1,3 +1,3 @@
 export interface EasebuzzCheckoutPlugin {
-  proceedToPayment(option: String): Promise<any>;
+  proceedToPayment(option: any): Promise<any>;
 }
