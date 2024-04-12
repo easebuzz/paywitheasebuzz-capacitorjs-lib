@@ -7,7 +7,7 @@
     "methods": [
       {
         "name": "proceedToPayment",
-        "signature": "(option: any) => any",
+        "signature": "(option: any) => Promise<any>",
         "parameters": [
           {
             "name": "option",
@@ -15,12 +15,10 @@
             "type": "any"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<any>",
         "tags": [],
         "docs": "",
-        "complexTypes": [
-          "String"
-        ],
+        "complexTypes": [],
         "slug": "proceedtopayment"
       }
     ],
