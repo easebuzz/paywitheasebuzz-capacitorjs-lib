@@ -21,7 +21,7 @@ public class EasebuzzCheckoutPlugin extends Plugin {
 
     @PluginMethod
     public void proceedToPayment(PluginCall call) {
-        saveCall(call);
+        bridge.saveCall(call);
         JSObject option_params = call.getObject("option", new JSObject());
         try{
             Intent intentProceed = new Intent(getActivity(), PWECouponsActivity.class);
@@ -46,7 +46,7 @@ public class EasebuzzCheckoutPlugin extends Plugin {
             JSObject jsObject = new JSObject();
             jsObject.put("result", data.getStringExtra("result"));
             jsObject.put("payment_response", data.getStringExtra("payment_response"));
-            call.success(jsObject);
+            call.resolve(jsObject);
 
 
         }
